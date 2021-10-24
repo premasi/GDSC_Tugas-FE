@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Yang nyuri bakal diazab -by Raka Ryandra Guntara
+Capek cuy */
+
+header h1 a {
+    text-decoration: none;
+    color: azure;
+    margin-left: 5%;
+    float: left;
+}
+
+h1 a:hover{
+    color: #B30F27;
+}
+
+header{
+    padding:1rem;
+    display:flex;
+    justify-content: flex-end;
+    background-color: #0c1117;
+    position: relative;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.search{
+    margin-right: 50px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #B30F27;
+    border-radius: 10px;
+}
+
+/* Yang nyuri bakal diazab -by Raka Ryandra Guntara
+Capek cuy */
+
+.search::placeholder{
+    color: #142955;
+}
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(179,15,39,1);
+    background-color: #0c1117;
+    position:relative;
+    overflow: hidden;
+}
+
+
+.movie img{
+    width:100%;
+    transform: translateY(0);
+}
+
+/* Yang nyuri bakal diazab -by Raka Ryandra Guntara
+Capek cuy */
+
+.movie img:hover{
+    transform: translateY(-5%)
+}
+
+.movie-info {
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.movie-info span{
+    background-color: #B30F27;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.yellow{
+    color: azure;
+}
+
+.know-more{
+    background-color: #0c1117;
+    color: azure;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 40px;
+    padding: 8px 10px;
+}
+
+.know-more:hover{
+    color: #B30F27;
+}
+
+.notFound{
+    display: flex;
+    margin-top: 10vh;
+}
+
+/* Yang nyuri bakal diazab -by Raka Ryandra Guntara
+Capek cuy */
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  /* Yang nyuri bakal diazab -by Raka Ryandra Guntara
+Capek cuy */
+
+.overlay-content{
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.overlay-content img {
+    margin-top: -10vh;
+}
+
+.movie-detail{
+    color: azure;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.movie-detail h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.movie-detail span{
+    margin-top: 20px;
+    color: #FFC100;
+    font-size: 40px;
+}
+
+.movie-detail p{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.note{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #0c1117;
+    font-weight: bold;
+}
+
+.thank-you{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #818181;
+    font-weight: bold;
+}
+
+/* Yang nyuri bakal diazab -by Raka Ryandra Guntara
+Capek cuy */

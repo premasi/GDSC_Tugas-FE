@@ -84,6 +84,7 @@ Capek cuy */
 }
 
 .movie-info {
+    position: relative;
     color: azure;
     display: flex;
     align-items: center;
